@@ -1,0 +1,51 @@
+--FILE--
+<?php
+$env = new MtHaml\Environment('twig', array('enable_escaper' => false));
+echo $env->compileString($parts['HAML'], "$file.haml");
+
+--HAML--
+%html
+  :javascript
+    if (foo) {
+        alert(bar);
+    }
+  :css
+    body {
+            border: 1px;
+                    }
+  :plain
+            text & <strong>strong</strong> \#{foo} #{foo} {{ foo }}
+    text
+  :preserve
+    foo #{foo}
+    bar
+  :escaped
+            text & <strong class="error">strong</strong> \#{foo} #{foo} {{ foo }}
+  :cdata
+    a < b && a < 0
+--EXPECT--
+<html>
+  <script type="text/javascript">
+  //<![CDATA[
+    if (foo) {
+        alert(bar);
+    }
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+    body {
+            border: 1px;
+                    }
+  /*]]>*/
+  </style>
+          text & <strong>strong</strong> #{foo} {% line 11 %}{{ foo }} {{ '{{' }} foo }}
+  text
+foo {% line 14 %}{{ foo }}
+bar
+          text &amp; &lt;strong class=&quot;error&quot;&gt;strong&lt;/strong&gt; #{foo} {% line 17 %}{{ (foo)|escape }} {{ '{{' }} foo }}
+  <![CDATA[
+    a < b && a < 0
+  ]]>
+</html>
+

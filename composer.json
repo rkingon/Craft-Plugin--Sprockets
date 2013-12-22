@@ -1,0 +1,26 @@
+{
+	"name": "rkingon/Craft-Plugins--Sprockets",
+	"description": "Craft wrapper for Sprockets-PHP",
+	"autoload": {
+		"psr-0": {
+			"": "libs"
+		}
+	},
+	"authors": [
+		{
+			"name": "Vendethiel",
+			"email": "vendethiel@hotmail.fr"
+		},
+		{
+			"name": "Roi Kingon",
+			"email": "rkingon@gmail.com"
+		}
+	],
+	"require": {
+		"mthaml/mthaml": "1.3.0",
+		"coffeescript/coffeescript": "1.3.1",
+		"leafo/lessphp": "0.4.0",
+		"richthegeek/phpsass": "2012-06-27",
+		"matthiasmullie/minify": "dev-master"
+	}
+}

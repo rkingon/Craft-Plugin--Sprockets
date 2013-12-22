@@ -1,0 +1,30 @@
+* 1.3.0 (2013-10-04)
+
+ * Made filters modular (hason)
+ * Added filters: coffee, escaped, less, markdown, php, scss, twig (hason)
+ * Spec: Case insensitive doctype id after `!!!`
+ * Spec: `!!! XML` doctype ignored in non xhtml mode
+ * Spec: Do not output `/>` on empty elements in non xhtml mode
+ * Fixed handling of escaped string interpolations (hason)
+ * Improved Object Reference support: object name override (ronan-gloo)
+ * New examples
+
+* 1.2.2 (2013-03-29)
+
+ * Flatten deeply-nested data attributes
+
+* 1.2.0 (2013-02-09)
+
+ * Added support for interpolations in attributes: %form(action="" #{form_enctype(form)})
+ * Added support for object reference syntax: %div[object]
+ * Made the parser more permissive when parsing content of -# comments
+ * Fixed rendering of <?xml tags to not conflict with php short open tags
+ * Added ability to use inline comments in php code
+ * Added attribute expression support in ruby-like attributes: %html{get_attrs()}
+ * Added boolean attribute syntax in html-like attributes: %input(type="checkbox" checked)
+
+* 1.1.0 (2012-09-24)
+
+ * Added handling of special attributes (e.g. id, class, data, and boolean attributes)
+ * Compiled MtHaml templates now need MtHaml at runtime in some cases (and a Twig extension, for Twig templates).
+

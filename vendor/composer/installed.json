@@ -1,0 +1,244 @@
+[
+    {
+        "name": "mthaml/mthaml",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/arnaud-lb/MtHaml.git",
+            "reference": "00f54bf0ce6a57560d28413eaeccb301b63d98eb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/arnaud-lb/MtHaml/zipball/00f54bf0ce6a57560d28413eaeccb301b63d98eb",
+            "reference": "00f54bf0ce6a57560d28413eaeccb301b63d98eb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "conflict": {
+            "mthaml/mthaml-bundle": "<1.1.0"
+        },
+        "require-dev": {
+            "coffeescript/coffeescript": "~1",
+            "leafo/lessphp": "*",
+            "leafo/scssphp": "*",
+            "michelf/php-markdown": "~1.3",
+            "twig/twig": "~1.11"
+        },
+        "suggest": {
+            "coffeescript/coffeescript": "If you want to use :coffee or :coffeescript filter",
+            "leafo/lessphp": "If you want to use :less filter",
+            "leafo/scssphp": "If you want to use :scss filter",
+            "michelf/php-markdown": "If you want to use :markdown filter",
+            "twig/twig": "If you want to use Twig templating engine"
+        },
+        "time": "2013-10-04 15:05:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "MtHaml\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Arnaud Le Blanc",
+                "email": "arnaud.lb@gmail.com"
+            }
+        ],
+        "description": "HAML for PHP",
+        "homepage": "https://github.com/arnaud-lb/MtHaml",
+        "keywords": [
+            "HAML"
+        ]
+    },
+    {
+        "name": "coffeescript/coffeescript",
+        "version": "1.3.1",
+        "version_normalized": "1.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/alxlit/coffeescript-php.git",
+            "reference": "ef262881d3f1edcca1366f4ddf18293843370da5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/alxlit/coffeescript-php/zipball/ef262881d3f1edcca1366f4ddf18293843370da5",
+            "reference": "ef262881d3f1edcca1366f4ddf18293843370da5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-08-04 14:44:51",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "CoffeeScript": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alex Little",
+                "email": "alxlit@gmail.com",
+                "homepage": "http://alxlit.name"
+            }
+        ],
+        "description": "A port of the CoffeeScript compiler to PHP.",
+        "homepage": "http://github.com/alxlit/coffeescript-php",
+        "keywords": [
+            "JS",
+            "coffee",
+            "coffeescript",
+            "javascript"
+        ]
+    },
+    {
+        "name": "leafo/lessphp",
+        "version": "v0.4.0",
+        "version_normalized": "0.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/leafo/lessphp.git",
+            "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/leafo/lessphp/zipball/51f3f06f0fe78a722dabfd14578444bdd078d9de",
+            "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de",
+            "shasum": ""
+        },
+        "time": "2013-08-09 17:09:19",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "lessc.inc.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT",
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Leaf Corcoran",
+                "email": "leafot@gmail.com",
+                "homepage": "http://leafo.net"
+            }
+        ],
+        "description": "lessphp is a compiler for LESS written in PHP.",
+        "homepage": "http://leafo.net/lessphp/"
+    },
+    {
+        "name": "richthegeek/phpsass",
+        "version": "2012-06-27",
+        "version_normalized": "2012-06-27",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/richthegeek/phpsass.git",
+            "reference": "3ed604470630a11897e580f9551ad83dde715c1f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/richthegeek/phpsass/zipball/3ed604470630a11897e580f9551ad83dde715c1f",
+            "reference": "3ed604470630a11897e580f9551ad83dde715c1f",
+            "shasum": ""
+        },
+        "time": "2013-06-27 14:12:37",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "script/",
+                "renderers/",
+                "tree/",
+                "SassException.php",
+                "SassFile.php",
+                "SassParser.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Richard Lyon",
+                "homepage": "https://github.com/richthegeek"
+            },
+            {
+                "name": "Sebastian Siemssen",
+                "homepage": "https://twitter.com/thefubhy"
+            },
+            {
+                "name": "Steve Jones",
+                "homepage": "https://github.com/darthsteven"
+            },
+            {
+                "name": "Sam Richard",
+                "homepage": "https://github.com/snugug"
+            }
+        ],
+        "description": "PHPSass is a PHP compiler for SASS, a popular CSS pre-processor language.",
+        "homepage": "http://phpsass.com"
+    },
+    {
+        "name": "matthiasmullie/minify",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/matthiasmullie/minify.git",
+            "reference": "7f17bcfc223f554cf30a464b6abea69a9a947061"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/7f17bcfc223f554cf30a464b6abea69a9a947061",
+            "reference": "7f17bcfc223f554cf30a464b6abea69a9a947061",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pcre": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-12-01 22:51:43",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                ""
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Matthias Mullie",
+                "email": "minify@mullie.eu",
+                "role": "Developer"
+            }
+        ],
+        "description": "CSS & JS minifier",
+        "homepage": "https://github.com/matthiasmullie/minify"
+    }
+]
