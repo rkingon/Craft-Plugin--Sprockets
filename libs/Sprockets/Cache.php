@@ -3,13 +3,14 @@ namespace Sprockets;
 
 class Cache
 {
-	private $pipeline, $type, $options, $hash, $processed = false;
+	private $pipeline, $main_file, $type, $options, $hash, $processed = false;
 
-	public function __construct($pipeline, $type, $vars = array(), array $options = array())
+	public function __construct($pipeline, $main_file, $type, $vars = array(), array $options = array())
 	{
 		$this->pipeline = $pipeline;
 		$this->type = $type;
 		$this->vars = $vars;
+		$this->main_file = $main_file;
 		$this->options = array_merge(array(
 			'cache_directory' => $pipeline->getOption('CACHE_DIRECTORY'),
 			'minify' => false,
@@ -67,7 +68,7 @@ class Cache
 	{
 		$pipeline = $this->pipeline; //__invoke won't with "$this->pipeline()"
 	
-		list($files, $content) = $pipeline($this->type, null, $this->vars, true); //full=true
+		list($files, $content) = $pipeline($this->type, $this->main_file, $this->vars, true); //full=true
 
 		if (!empty($this->options['minify'])
 		 && class_exists($class = 'Sprockets\Filter\Minifier\\' . ucfirst($this->type)))

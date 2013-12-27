@@ -30,9 +30,9 @@ class SprocketsService extends BaseApplicationComponent
 		);
 	}
 	
-	public function getAsset($type)
+	public function getAsset($type, $main_file)
 	{
-		return "/".new \Sprockets\Cache($this->pipeline, $type, $vars = array(), $this->options);
+		return "/".new \Sprockets\Cache($this->pipeline, $main_file, $type, $vars = array(), $this->options);
 	}
 	
 	private function _getPaths()
