@@ -20,12 +20,14 @@ Complete asset manager for Craft CMS. Craft wrapper for [PHP-Sprockets](https://
 
 ## Usage
 #### Stylesheet
-`<link rel="stylesheet" href="{{ craft.sprockets.stylesheet }}" type="text/css">` (defaults to application.css)
-`{{ craft.sprockets.stylesheet('my_custom_file') }}` (uses my_custom_file.css)
+`<link rel="stylesheet" href="{{ craft.sprockets.stylesheet }}" type="text/css">`
 
 #### Javascript
-`<script src="{{ craft.sprockets.javascript }}"></script>` (defaults to application.js)
-`{{ craft.sprockets.javascript('my_custom_file') }}` (uses my_custom_file.js)
+`<script src="{{ craft.sprockets.javascript }}"></script>`
+
+#### Custom File
+`{{ craft.sprockets.stylesheet('my_custom_file') }}`  
+`{{ craft.sprockets.javascript('my_custom_file') }}`
 
 ## Custom Config
 _Note: These are actually the default values, but you can override them by editting and putting this in your craft config file._
